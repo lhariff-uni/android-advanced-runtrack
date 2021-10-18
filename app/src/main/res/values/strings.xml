@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Running Tracker</string>
+    <string name="new_track">Start New Track</string>
+    <string name="finish">Finish</string>
+    <string name="delete">Delete</string>
+
+    <string name="track_name">Track Name</string>
+    <string name="track_date">Track Date</string>
+    <string name="track_description">Track Description</string>
+    <string name="track_time">Time</string>
+    <string name="track_distance">Distance (m)</string>
+    <string name="track_pace">Pace (m/s)</string>
+
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+
+    <string name="number">Number</string>
+    <string name="point_time">Point Time</string>
+    <string name="point_latitude">Latitude</string>
+    <string name="point_longitude">Longitude</string>
+
+    <string name="trackpoints">Trackpoints</string>
+
+    <string name="null_time">00:00:00</string>
+</resources>

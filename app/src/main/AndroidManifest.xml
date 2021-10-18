@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.runningtracker">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RunningTracker">
+        <activity android:name=".view.NewTrack" />
+        <activity android:name=".view.SinglePointView" />
+        <activity android:name=".view.ViewTrack" />
+        <activity android:name=".view.SingleTrackView" />
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".RunService"
+            android:exported="true"
+            android:foregroundServiceType="location"/>
+        <provider
+            android:authorities="com.example.runningtracker.contentprovider.TrackProvider"
+            android:multiprocess="true"
+            android:exported="true"
+            android:name="com.example.runningtracker.contentprovider.TrackProvider">
+        </provider>
+    </application>
+
+</manifest>
